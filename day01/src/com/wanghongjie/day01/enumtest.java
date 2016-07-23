@@ -1,11 +1,21 @@
 package com.wanghongjie.day01;
 
+import org.junit.Test;
+
 public class enumtest {
 	public static void main(String[] args){
 		int a ;
 		a=grade.C.haha();
 		String b = grade.C.a;
 		System.out.println(a+b);
+	}
+	@Test
+	public void test2(){
+		System.out.println(grade.A.name());
+		System.out.println(grade.A.ordinal());
+		grade.valueOf(grade.class, "B");//将字符串转换成枚举类型
+		System.out.println(grade.values());
+		
 	}
 }
 enum grade{
